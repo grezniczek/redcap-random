@@ -1,0 +1,30 @@
+{
+    "name": "Random",
+    "tt_name": "module_name",
+    "namespace": "DE\\RUB\\RandomExternalModule",
+    "description": "A REDCap external module providing random numbers, strings, guids that are filled when data entry forms or surveys are saved.",
+    "tt_description": "module_desc",
+    "documentation": "README.md",
+    "tt_documentation": "module_docs",
+    "authors": [
+        {
+            "name": "Günther Rezniczek",
+            "email": "guenther.rezniczek@rub.de",
+            "institution": "Ruhr-Universität Bochum"
+        }
+    ],
+    "framework-version": 8,
+    "permissions": [
+        "redcap_save_record"
+    ],
+    "system-settings": [
+    ],
+    "project-settings": [
+    ],
+    "compatibility": {
+        "php-version-min": "5.6.0",
+        "php-version-max": "",
+        "redcap-version-min": "10.1.0",
+        "redcap-version-max": ""
+     }
+}
