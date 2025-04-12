@@ -13,7 +13,7 @@ class RandomExternalModule extends \ExternalModules\AbstractExternalModule {
 
     #region Hooks
 
-    function redcap_save_record ($project_id, $record = NULL, $instrument, $event_id, $group_id = NULL, $survey_hash = NULL, $response_id = NULL, $repeat_instance = 1) {
+    function redcap_save_record ($project_id, $record, $instrument, $event_id, $group_id, $survey_hash, $response_id, $repeat_instance) {
         // Only when an instrument is saved and the @QRCODE action tag is present
         if ($instrument) {
             $tags = $this->getActionTags($project_id, $instrument);
